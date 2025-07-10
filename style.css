@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+/* Nav styles */
+nav {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #6A1B9A;
+}
+
+/* Header */
+header {
+  background: #6A1B9A;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Section */
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 1rem auto 30%;
+  background: #fff;
+  border-radius: 8px;
+}
+
+#about,
+#projects,
+#resume,
+#contact {
+  margin-top: 5%;
+  background-color: white;
+  border-left: 5px solid #6A1B9A;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.project {
+  background: whitesmoke;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #6A1B9A;
+}
+
+/* Links */
+a {
+  color: #6A1B9A;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+  margin-top: 10%;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  border-bottom: 2px solid #6A1B9A;
+  display: inline-block;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    overflow-x: auto;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  header {
+    background: #E9A5F1;
+    color: black;
+    padding: 1.5rem;
+    height: auto;
+  }
+
+  header h2 {
+    font-size: 2rem;
+  }
+
+  header p {
+    padding-top: 0.5rem;
+    font-size: small;
+  }
+
+  section {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    margin-top: 63%;
+  }
+}
+
